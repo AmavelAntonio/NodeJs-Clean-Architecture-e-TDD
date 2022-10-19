@@ -1,0 +1,34 @@
+{
+  "name": "nodejs-clean-architecture-e-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged":{
+    "*.js": [
+        "standard --fix", "git add ."
+       ]
+  },
+  "husks": {
+    "hooks": {
+      "pre-commit": "lint-staged" 
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmavelAntonio/NodeJs-Clean-Architecture-e-TDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmavelAntonio/NodeJs-Clean-Architecture-e-TDD/issues"
+  },
+  "homepage": "https://github.com/AmavelAntonio/NodeJs-Clean-Architecture-e-TDD#readme",
+  "devDependencies": {
+    "lint-staged": "^13.0.3",
+    "standard": "^17.0.0"
+  }
+}

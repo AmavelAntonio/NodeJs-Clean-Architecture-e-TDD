@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "lint-staged":{
+  "lint-staged": {
     "*.js": [
-        "standard --fix", "git add ."
-       ]
+      "standard --fix",
+      "git add ."
+    ]
   },
   "husks": {
     "hooks": {
-      "pre-commit": "lint-staged" 
+      "pre-commit": "lint-staged"
     }
   },
   "repository": {
@@ -28,6 +29,7 @@
   },
   "homepage": "https://github.com/AmavelAntonio/NodeJs-Clean-Architecture-e-TDD#readme",
   "devDependencies": {
+    "jest": "^29.2.1",
     "lint-staged": "^13.0.3",
     "standard": "^17.0.0"
   }
